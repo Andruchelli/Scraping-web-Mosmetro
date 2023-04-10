@@ -86,7 +86,7 @@ function compare() { // третий лист
 }
 function message() { // формируем запись для отправки в Telegram
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }; // параметры для красивого вывода даты в формате: день недели, число, месяц, год
-  const clientIdChat = "-1001335034855";
+  const clientIdChat = "//////";
   date_1 = ws_compare.getRange(1, 1).getValue();
   date_1_parse = date_1.toLocaleDateString('ru-RU', options);
   // console.log(date_1_parse)
@@ -121,7 +121,7 @@ function message() { // формируем запись для отправки 
 }
 
 function sendText(clientIdChat, text) { // функция для отправки сообщения в телеграм
-  const token = "1585166338:AAFlw8YtlYZ3OBhgOA6OHyFsgN2C2dqjnR0"; // токен чат-группы в телеграме
+  const token = "///////"; // токен чат-группы в телеграме
   let data_T = {
     method: 'sendMessage',
     chat_id: String(clientIdChat),
