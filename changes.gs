@@ -1,3 +1,5 @@
+// https://www.mosmetro.ru/passengers/information/works/
+
 const ws = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Current"); // лист, откуда мы берём значения
 const ws_copy = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Previous"); // лист, куда мы копируем значения
 const ws_compare = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Differents"); // лист, куда мы заносим данные, содержащиеся только в одном из диапазонов (новые или изменённые данные)
